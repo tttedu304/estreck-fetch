@@ -37,7 +37,7 @@ console.log(estreck.getUnverifiedCodes());
 const estreck = require("estreck-fetch");
 let toSearch = "Random";
 
-estreck.fetchCode(toSearch);
+console.log(estreck.fetchCode(toSearch));
 ```
 
 ### addCode
