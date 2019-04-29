@@ -1,0 +1,26 @@
+{
+  "name": "estreck-fetch",
+  "version": "1.0.0",
+  "description": "Fetch to Estreck API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tttedu304/estreck-fetch.git"
+  },
+  "keywords": [
+    "estreck",
+    "api",
+    "fetch",
+    "codes",
+    "code"
+  ],
+  "author": "tttedu304",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tttedu304/estreck-fetch/issues"
+  },
+  "homepage": "https://github.com/tttedu304/estreck-fetch#readme"
+}
