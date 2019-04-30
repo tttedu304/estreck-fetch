@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/tttedu304/estreck-fetch/issues"
   },
-  "homepage": "https://github.com/tttedu304/estreck-fetch#readme"
+  "homepage": "https://github.com/tttedu304/estreck-fetch#readme",
+  "dependencies": {
+    "node-fetch": "^2.4.1"
+  }
 }
