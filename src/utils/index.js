@@ -3,42 +3,18 @@ Functions to fetch to Estreck API
 */
 const fetch = require('node-fetch');
 exports.getCodes = async() => {
-    let toReturn = "";
-    fetch('https://estreck.ml/codes')
-        .then((res) => {
-        return res.json();
-        })
-        .then((json) => {
-            toReturn = json;
-        })
-        .catch(err => console.log(err));
-    return toReturn;
+    let res = await fetch('https://estreck.ml/codes');
+    return res.json;
 };
 
 exports.getUnverifiedCodes = async() => {
-    let toReturn = "";
-    fetch('https://estreck.ml/nocodes')
-        .then((res) => {
-            return res.json();
-        })
-        .then((json) => {
-            toReturn = json;
-        })
-        .catch(err => console.log(err));
-    return toReturn;
+    let res = await fetch('https://estreck.ml/nocodes');
+    return res.json;
 };
 
 exports.fetchCode = async(search) => {
-    let toReturn = "";
-    fetch(`https://estreck.ml/codes/search/${search}`)
-        .then((res) => {
-            return res.json();
-        })
-        .then((json) => {
-            toReturn = json;
-        })
-        .catch(err => console.log(err));
-    return toReturn;
+    let res = await fetch(`https://estreck.ml/codes/search/${search}`);
+    return res.json;
 };
 
 exports.addCode = async() => {

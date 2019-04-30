@@ -1,6 +1,6 @@
 {
   "name": "estreck-fetch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fetch to Estreck API",
   "main": "src/index.js",
   "scripts": {
