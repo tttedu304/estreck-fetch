@@ -14,7 +14,11 @@
 ```javascript
 const estreck = require("estreck-fetch");
 
-console.log(estreck.getCodes());
+async function getCodes(){
+    let codes = await estreck.getCodes();
+    let code = codes[0];
+    console.log(code);
+}
 //This will return an array of objects / Verified codes
 
 //Verificated codes = codes that would work perfectly in your project
@@ -25,7 +29,11 @@ console.log(estreck.getCodes());
 ```javascript
 const estreck = require("estreck-fetch");
 
-console.log(estreck.getUnverifiedCodes());
+async function getUnverifiedCodes(){
+    let codes = await estreck.getUnverifiedCodes();
+    let code = codes[0];
+    console.log(code);
+}
 //This will return an array of objects / Unverified codes
 
 //Unverified codes = codes that could include malicious code or it has not been accepted by Estreck
@@ -35,9 +43,13 @@ console.log(estreck.getUnverifiedCodes());
 
 ```javascript
 const estreck = require("estreck-fetch");
-let toSearch = "Random";
 
-console.log(estreck.fetchCode(toSearch));
+async function fetchCode(){
+    let toSearch = "Random";
+    let codes = await estreck.fetchCode(toSearch);
+    let code = codes[0]:
+    console.log(code);
+}
 ```
 
 ### addCode
