@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/tttedu304/estreck-fetch#readme",
   "dependencies": {
-    "node-fetch": "^2.4.1"
+    "node-fetch": "^3.1.1"
   }
 }
